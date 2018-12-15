@@ -77,4 +77,7 @@
     <string name="full_screen">Full Screen</string>
     <string name="placeholder">Placeholder</string>
 
+    <string name="placeholder_counter">0</string>
+    <string name="loading_track_error">Loading track error</string>
+
 </resources>
