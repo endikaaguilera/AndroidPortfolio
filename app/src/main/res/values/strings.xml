@@ -1,3 +1,80 @@
+<!--
+  ~ Created by Endika Aguilera on 15/12/2018.
+  ~ Copyright: (c) 2018 Endika Aguilera. All rights reserved.
+  -->
+
 <resources>
     <string name="app_name">Portfolio</string>
+
+    <string name="tab_popular">Popular</string>
+    <string name="tab_top_rated">Top Rated</string>
+    <string name="tab_upcoming">Upcoming</string>
+
+    <string name="title_activity_detail">Movie Details</string>
+
+    <string name="movie_details_original_title">Original Title</string>
+
+    <string name="play">Play</string>
+
+    <string name="movie_reviews_header">Reviews</string>
+    <string name="movie_trailers_header">Trailers</string>
+    <string name="movie_overview_header">Overview</string>
+
+    <string name="share_intent_header">Share:</string>
+
+    <string name="on_boarding">On Boarding</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="itunes_api">iTunes Api</string>
+    <string name="baking_app">Baking App</string>
+    <string name="xyz_reader">XYZ Reader</string>
+    <string name="chat_app">Chat App</string>
+    <string name="maps_app">Maps App</string>
+    <string name="login_app">Login App</string>
+    <string name="lateral_menu_app">Lateral Menu App</string>
+
+    <string name="choose_movie_hint">Please choose a movie</string>
+    <string name="retry">Retry</string>
+    <string name="no_results_found">No results found</string>
+    <string name="loading_more_content">Loading more content</string>
+    <string name="loading_data">Loading data</string>
+    <string name="no_data">No results found</string>
+    <string name="no_internet">Connection error</string>
+    <string name="error">Something went wrong</string>
+
+    <string name="no_available_data">---</string>
+    <string name="no_available_author">Anonymous</string>
+    <string name="no_available_title">No title available</string>
+    <string name="no_available_overview">No overview available</string>
+    <string name="no_available_body_content">No content available</string>
+    <string name="back">Back</string>
+    <string name="skip">SKIP</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+
+    <string name="loading">Loading…</string>
+    <string name="playing">Playing: </string>
+
+    <string name="error_data">No available data.</string>
+    <string name="error_retrieving">Error retrieving data</string>
+    <string name="choose_hint">Please choose a recipe</string>
+    <string name="add_to_widget">ADD TO WIDGET</string>
+    <string name="add_to_widget_success">Recipe Added To Widget</string>
+    <string name="add_to_widget_error">No available widget found</string>
+    <string name="add_to_widget_recipe_error">You must select a recipe</string>
+    <string name="recipe_image_content_description">Recipe Image</string>
+
+    <string name="ok">OK</string>
+    <string name="no">NO</string>
+    <string name="exit">EXIT</string>
+
+    <string name="internet_error_dialog_title">Internet Connection Error</string>
+    <string name="internet_error_dialog_message">Please check your internet connection and try again.</string>
+    <string name="exit_app_dialog_title">Exit App?</string>
+    <string name="exit_app_dialog_message">Do you want to quit the app?</string>
+    <string name="recipe_details">Recipe Details</string>
+    <string name="ingredients">INGREDIENTS</string>
+    <string name="steps">STEPS</string>
+    <string name="full_screen">Full Screen</string>
+    <string name="placeholder">Placeholder</string>
+
 </resources>

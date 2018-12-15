@@ -1,0 +1,67 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="grid_view_item_padding">2dp</dimen>
+
+    <dimen name="collapsing_layout_height">310dp</dimen>
+    <dimen name="collapsing_toolbar_margin_start">120dp</dimen>
+    <dimen name="collapsing_toolbar_margin_bottom">50dp</dimen>
+
+    <dimen name="backdrop_image_height">220dp</dimen>
+    <dimen name="poster_image_height">120dp</dimen>
+    <dimen name="poster_image_width">84dp</dimen>
+
+    <dimen name="static_margin">16dp</dimen>
+    <dimen name="dynamic_margin">16dp</dimen>
+
+    <dimen name="card_view_trailer_margin">6dp</dimen>
+    <dimen name="card_view_margin">12dp</dimen>
+
+    <dimen name="margin_item_margin">2dp</dimen>
+
+    <dimen name="card_corner_radius">8dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="drawable_padding">6dp</dimen>
+
+    <dimen name="trailer_card_margin_top">4dp</dimen>
+
+    <dimen name="overview_card_margin_top">18dp</dimen>
+    <dimen name="overview_card_margin_top_one">34dp</dimen>
+    <dimen name="overview_card_margin_top_two">22dp</dimen>
+    <dimen name="overview_card_original_title_text_size">24sp</dimen>
+
+    <dimen name="bottom_line_height">2dp</dimen>
+
+    <dimen name="review_card_bottom_line_margin_start">30dp</dimen>
+
+    <dimen name="placeholder_card_height">480dp</dimen>
+
+    <dimen name="button_width_small">100dp</dimen>
+    <dimen name="button_width_large">180dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_margin">18dp</dimen>
+
+    <dimen name="no_margin">0dp</dimen>
+    <dimen name="no_dimen">0dp</dimen>
+
+    <dimen name="ia_recycler_view_item_spacing">12dp</dimen>
+    <dimen name="ia_card_view_texts_margin">8dp</dimen>
+    <dimen name="ia_horizontal_container_height">280dp</dimen>
+    <dimen name="ia_horizontal_recycler_view_width">140dp</dimen>
+    <dimen name="ia_image_view_width">140dp</dimen>
+    <dimen name="ia_image_view_height">100dp</dimen>
+    <dimen name="ia_horizontal_recycler_view_height">220dp</dimen>
+
+    <!-- NEW BAKING APP -->
+
+    <dimen name="grid_view_padding">4dp</dimen>
+
+    <dimen name="margin_bottom_helper">100dp</dimen>
+
+    <dimen name="card_view_texts_margin">8dp</dimen>
+
+
+</resources>

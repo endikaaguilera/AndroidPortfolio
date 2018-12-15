@@ -1,3 +1,8 @@
+<!--
+  ~ Created by Endika Aguilera on 15/12/2018.
+  ~ Copyright: (c) 2018 Endika Aguilera. All rights reserved.
+  -->
+
 <resources>
 
     <!-- Base application theme. -->
@@ -8,4 +13,87 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.ActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Buttons">
+        <item name="android:layout_width">@dimen/button_width_large</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:foreground">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ButtonRed" parent="Buttons">
+        <item name="android:background">@drawable/rounded_corners_red</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="SmallButtons">
+        <item name="android:layout_width">@dimen/button_width_small</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:foreground">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ButtonRedSmall" parent="SmallButtons">
+        <item name="android:background">@drawable/rounded_corners_red</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ButtonBorderedRedSmall" parent="SmallButtons">
+        <item name="android:background">@drawable/rounded_corners_border_red</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ButtonWhiteSmall" parent="SmallButtons">
+        <item name="android:background">@drawable/rounded_corners_white</item>
+        <item name="android:textColor">@color/redRating</item>
+    </style>
+
+    <style name="ButtonBorderedWhiteSmall" parent="SmallButtons">
+        <item name="android:background">@drawable/rounded_corners_border_white</item>
+        <item name="android:textColor">@color/redRating</item>
+    </style>
+
+    <style name="Dot">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:background">@drawable/ic_indicator</item>
+    </style>
+
+    <style name="LeftDot" parent="Dot">
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+
+    <style name="RightDot" parent="Dot">
+        <item name="android:layout_marginStart">2dp</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/colorWhite</item>
+
+        <!--&lt;!&ndash; Additionally if you want animations when dialog opening &ndash;&gt;-->
+        <!--<item name="android:windowEnterAnimation">@anim/slide_up</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/slide_down</item>-->
+    </style>
 </resources>
