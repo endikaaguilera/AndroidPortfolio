@@ -34,6 +34,8 @@ ext {
     butterknifeVersion = '8.8.1'
     glideVersion = '4.8.0'
     okhttpVersion = '3.10.0'
+    retrofitVersion = '2.5.0'
+    retrofitConverterVersion = '2.3.0'
 }
 
 dependencies {
@@ -52,6 +54,9 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
 
     implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitConverterVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

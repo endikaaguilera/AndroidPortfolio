@@ -11,7 +11,10 @@ import android.net.NetworkInfo;
 
 public class NetUtils {
 
-    public final static String API_BASE_URL = "https://api.endikaaguilera.com/";
+    public final static String API_BASE_URL = "https://api.endikaaguilera.com/portfolio/";
+    public final static String API_ITUNES_QUERY = "itunes/itunes_app_data.json";
+
+    public static final int REQUEST_CODE_OK = 200;
 
     /**
      * @return true if internet is available

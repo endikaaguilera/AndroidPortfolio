@@ -5,8 +5,8 @@
 
 package com.endikaaguilera.portfolio.itunes.views;
 
-import android.util.Log;
-
+import com.endikaaguilera.portfolio.globals.api.Api;
+import com.endikaaguilera.portfolio.globals.utils.LogUtils;
 import com.endikaaguilera.portfolio.globals.utils.NetUtils;
 import com.endikaaguilera.portfolio.globals.utils.RetrofitUtils;
 import com.endikaaguilera.portfolio.itunes.models.IAData;
@@ -16,6 +16,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 class IAMainInteractor {
+
+    private final static String TAG = IAMainInteractor.class.getSimpleName();
 
     public interface IAGetDataListener {
 
@@ -42,7 +44,7 @@ class IAMainInteractor {
 
         Api restClient = RetrofitUtils.getInstance().create(Api.class);
 
-        Call<IAData> call = restClient.getData();
+        Call<IAData> call = restClient.getiTunesData();
 
         //noinspection NullableProblems
         call.enqueue(new Callback<IAData>() {
@@ -60,6 +62,9 @@ class IAMainInteractor {
                             results.getBalkanBeatBox().size() == 0) {
 
                         if (listener != null) listener.setData(null);
+
+                        LogUtils.logError(TAG, "IA no data error");
+
                         return;
                     }
 
@@ -69,6 +74,8 @@ class IAMainInteractor {
 
                     if (listener != null) listener.setData(null);
 
+                    LogUtils.logError(TAG, "IA getData error: " + response.message());
+
                 }
 
             }
@@ -76,7 +83,8 @@ class IAMainInteractor {
             @Override
             public void onFailure(Call<IAData> call, Throwable t) {
 
-                Log.e("TEST", "error 04");
+                LogUtils.logError(TAG, "OkHttp failed to obtain result", t);
+
                 if (listener != null) listener.setData(null);
 
             }

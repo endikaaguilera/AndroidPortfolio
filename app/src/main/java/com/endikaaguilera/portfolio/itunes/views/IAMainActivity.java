@@ -31,9 +31,6 @@ import com.endikaaguilera.portfolio.itunes.player.IATrackPlayer;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-// TODO - Add Logs on errors
-// TODO - Remove Test Logs
-// TODO - Add this to manifest -> android:configChanges="orientation|screenSize|keyboard"
 public class IAMainActivity extends AppCompatActivity
         implements IAMainView, IAOnTrackItemClickListener, IATrackPlayer.IAPlayerListener {
 
@@ -71,7 +68,7 @@ public class IAMainActivity extends AppCompatActivity
 
         ButterKnife.bind(this);
 
-        setTitle(getString(R.string.itunes_api));
+        setTitle(getString(R.string.itunes_app));
 
         if (getSupportActionBar() != null) getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

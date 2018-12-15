@@ -38,7 +38,7 @@
     <Button
         android:id="@+id/iaBtn"
         style="@style/ButtonRed"
-        android:text="@string/itunes_api"
+        android:text="@string/itunes_app"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

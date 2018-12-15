@@ -8,15 +8,17 @@ package com.endikaaguilera.portfolio.itunes.player;
 import android.media.AudioAttributes;
 import android.media.MediaPlayer;
 import android.os.Handler;
-import android.util.Log;
 import android.widget.ImageView;
 
 import com.endikaaguilera.portfolio.R;
+import com.endikaaguilera.portfolio.globals.utils.LogUtils;
 
 import java.io.IOException;
 import java.util.Random;
 
 public class IATrackPlayer {
+
+    private final static String TAG = IATrackPlayer.class.getSimpleName();
 
     public interface IAPlayerListener {
 
@@ -129,7 +131,6 @@ public class IATrackPlayer {
         this.mediaPlayer.setOnPreparedListener(mp -> {
 
             if (this.listener != null) this.listener.onSetTrackName(trackName);
-            Log.e("IAMainInteractor", "mediaPlayer playTrack");
             playTrack();
 
         });
@@ -148,7 +149,7 @@ public class IATrackPlayer {
                 this.listener.onRelease();
             } else releaseMediaPlayer();
 
-            Log.e("IAMainInteractor", "mediaPlayer error: " + what);
+            LogUtils.logError(TAG, "mediaPlayer error");
 
             return false;
 
@@ -166,7 +167,7 @@ public class IATrackPlayer {
                 this.listener.onRelease();
             } else releaseMediaPlayer();
 
-            Log.e("IAMainInteractor", "mediaPlayer setDataSource e: " + e);
+            LogUtils.logError(TAG, "mediaPlayer setDataSource IOException", e);
 
         }
 

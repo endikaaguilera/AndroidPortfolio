@@ -7,7 +7,6 @@ package com.endikaaguilera.portfolio.globals.okhttp;
 
 import android.os.Build;
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.DataSource;
@@ -16,6 +15,7 @@ import com.bumptech.glide.load.data.DataFetcher;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.util.ContentLengthInputStream;
 import com.bumptech.glide.util.Synthetic;
+import com.endikaaguilera.portfolio.globals.utils.LogUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -79,9 +79,8 @@ class OkHttpStreamFetcher implements DataFetcher<InputStream>,
 
     @Override
     public void onFailure(@NonNull Call call, @NonNull IOException e) {
-        if (Log.isLoggable(TAG, Log.DEBUG)) {
-            Log.d(TAG, "OkHttp failed to obtain result", e);
-        }
+
+        LogUtils.logError(TAG, "OkHttp failed to obtain result", e);
 
         callback.onLoadFailed(e);
     }
